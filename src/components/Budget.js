@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const Budget = () => {
-	const { budget, dispatch,expenses, currency } = useContext(AppContext);
+	const { budget, dispatch, expenses, currency } = useContext(AppContext);
 
 	const changeBudget = (val)=>{
 		const totalExpenses = expenses.reduce((total, item) => {
